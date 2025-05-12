@@ -1,16 +1,14 @@
 class Urls:
-
     BASE_URL = 'https://qa-scooter.praktikum-services.ru'
     COURIER_CREATE_URL = '/api/v1/courier'
     COURIER_LOGIN_URL = '/api/v1/courier/login'
-    DELETE_COURIER_URL = '/api/v1/courier/{id}'
+    DELETE_COURIER_URL = '/api/v1/courier/'
     ORDERS_URL = '/api/v1/orders'
     ORDERS_LIST_URL = '/api/v1/orders/track'
 
 
 class Total:
     OK_TRUE = {'ok': 'true'}
-    # CREATED_ORDER =
 
 
 class Couriers:
@@ -23,11 +21,13 @@ class Couriers:
     EXISTING_COURIER = {'login': 'xgcbjlebnp', 'password': 'fpmvijzuvf'}
     NOT_EXISTING_COURIER = {'login': 'MisterFrodoBaggins', 'password': 'TheRing'}
     EXISTING_COURIER_NO_LOGIN = {'password': 'fpmvijzuvf'}
+    ONLY_PASSWORD = {'password': 'fpmvijzuvf'}
 
     CREATED_ORDER = 201, 'track'
     ORDERS_LIST = 200, 'orders', list
-class OrderData:
 
+
+class OrderData:
     ORDER_DATA_1 = {
         "firstName": "Frodo",
         "lastName": "Beggins",
